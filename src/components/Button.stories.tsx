@@ -7,7 +7,14 @@ export default {
     component: Button,
     args: {
         children: 'Create account'
-    }
+    },
+    argTypes: {
+        children: {
+          table: {
+            disable: true
+          }
+        },
+      }
 } as Meta<ButtonProps>
 
 export const Defeaut: StoryObj<ButtonProps> = {}

@@ -7,7 +7,14 @@ export default {
     component: Text,
     args: {
         children: 'Lorem ipsum.'
-    }
+    },
+    argTypes: {
+        children: {
+          table: {
+            disable: true
+          }
+        },
+      }
 } as Meta<TextProps>
 
 export const Defeaut: StoryObj<TextProps> = {}

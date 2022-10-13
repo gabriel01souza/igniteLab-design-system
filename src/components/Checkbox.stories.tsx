@@ -8,6 +8,13 @@ export default {
     args: {
         children: 'Create account'
     },
+    argTypes: {
+        children: {
+          table: {
+            disable: true
+          }
+        },
+      },
     decorators: [
         (Story) => {
             return (

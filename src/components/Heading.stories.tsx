@@ -7,7 +7,14 @@ export default {
     component: Heading,
     args: {
         children: 'Lorem ipsum.'
-    }
+    },
+    argTypes: {
+        children: {
+          table: {
+            disable: true
+          }
+        },
+      }
 } as Meta<HeadingProps>
 
 export const Defeaut: StoryObj<HeadingProps> = {}
